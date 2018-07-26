@@ -24,11 +24,11 @@ class ClassCar
         $this->transmission = $transmission;
         $this->region = $region;
         if ($this->region == 'Russia') {
-            echo 'Продажи ограничены!' . 'Доступна комплектация: ' . $this->package . ' с коробкой передач: ' . $this->transmission . '.';
+            return 'Продажи ограничены!' . 'Доступна комплектация: ' . $this->package . ' с коробкой передач: ' . $this->transmission . '.';
         } elseif ($this->region == 'USA') {
-            echo 'Доступен широкий выбор моделей! Позвоните нам для получения дополнительной информации.';
+            return 'Доступен широкий выбор моделей! Позвоните нам для получения дополнительной информации.';
         } else {
-            echo 'Да прибудет с вами сила!';
+            return 'Да прибудет с вами сила!';
         }
     }
 }
